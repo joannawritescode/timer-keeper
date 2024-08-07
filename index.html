@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Time Tracker</title>
+	<link href="lib/bs/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="lib/bs-icons/bootstrap-icons.min.css">
+	<link rel="stylesheet" href="lib/files/styles.css" type="text/css">
+	<script src="lib/jscookie/js.cookie.js"></script>
+</head>
+<body class="bg-dark text-white">
+
+<div class="container-fluid">
+	<div class="row">
+		<div class="col">
+			<div class="row data">
+				<div class="col-3 example" id="ABCDEF">
+					<div class="card">
+					  <div class="card-body">
+					  	<div class="row">
+					    	<div class="col text-start"><h2 class="fw-bold">ABCDEF</h2></div>
+					    	<div class="col text-end"><p class="h6"><small>ABCDEF</small></p></div>
+					    </div>
+
+					    <div class="row bg-dark-subtle p-2">
+					    	<div class="col"><small>Created</small><br>Tue Jul 18 2023</div>
+					    	<div class="col"><small>Updated</small><br>Tue Jul 18 2023</div>
+					    </div>
+
+					    <div id="-view" class="row bg-primary-subtle text-center time p-2" seconds="0"><hrs class="col" label="hours">0</hrs><min class="col" label="minutes">0</min><sec class="col" label="seconds">0</sec></div>
+
+					    <div class="row buttons text-center">
+					    	<div class="col text-start">
+					    		<button class="edit-card btn btn-dark"><i class="bi bi-pencil-square"></i></button><button class="save-card btn btn-dark hide"><i class="bi bi-check-circle-fill"></i></button><button class="delete-card btn btn-dark"><i class="bi bi-trash-fill"></i></button>
+					    	</div>
+					    	<div class="col-5 text-end"><button class="btn btn-primary w-100 fw-bold text-uppercase">Start</button></div>
+					    </div>
+					  </div>
+					</div>
+				</div>
+			</div>		
+		</div>
+		<div class="col-2 sidebar text-start px-3 min-vh-100 d-flex flex-column justify-content-end">
+			<ul class="my-5 mx-2" style="list-style-type: none; padding: 0;">
+				<li class="list-item my-3">
+					<button id="add" class="btn btn-info"><i class="bi bi-plus-square-dotted"></i> ADD</button>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+	<script src="lib/bs/bootstrap.bundle.min.js"></script>
+	<script src="lib/jquery/jquery.min.js"></script>
+	<script src="lib/files/scripts.js"></script>
+
+</body>
+</html>

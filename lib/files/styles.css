@@ -1,0 +1,139 @@
+.col {
+border: 0 solid #555555;
+}
+
+.data > .col {
+  margin-top: 45px;
+}
+.card {
+width: auto;
+margin: 10px;
+}
+.card-body .row {
+margin: 10px 0;
+}
+.time.row {
+margin-bottom: 20px;
+}
+.buttons button {
+margin: auto 3px;
+}
+.hide {
+display: none;
+}
+.time > ::after {
+  content: attr(label);
+  margin-left: 8px;
+  display: inline-block;
+  width: 70px;
+  text-align: left;
+}
+.example {
+display: none;
+visibility: none;
+}
+.card h2 {
+line-height: 1;
+position: relative;
+}
+.card h2 input {
+max-width: 280px;
+margin: -8px auto;
+}
+
+.card h2.hover::before {
+  content: '';
+  border: 1px solid #8f8f9d;
+  top: -8px;
+  bottom: -8px;
+  display: block;
+  position: absolute;
+  right: -8px;
+  left: 0px;
+  border-radius: 3px;
+  display: inline-block;
+  cursor: text;
+}
+
+.card h2.editing:hover::before {
+	content: '';
+	visibility: hidden;
+}
+
+button.edit-title, button.save-title {
+  background: #ffffffd4;
+  font-size: 24px;
+  border-radius: 0 3px 3px 0;
+  top: -7px;
+  border: 0;
+  bottom: 1px;
+  right: 5px;
+  padding: 0 10px;
+  visibility: hidden;
+}
+
+.card h2.hover + button.edit-title {
+	visibility: visible;
+	pointer-events: none;
+}
+
+.card h2.hover.editing + button.edit-title {
+	visibility: hidden;
+}
+
+.card h2.editing + button + button.save-title {
+	visibility: visible;
+}
+
+.copy {
+	cursor: pointer;
+}
+
+.copy:hover {
+	background-color: var(--bs-primary-bg-subtle);
+	color: black;
+}
+
+.from-cookie {
+  margin-left: 5px;
+  font-size: 26px;
+  line-height: 1;
+}
+
+.btn-hover-danger:hover {
+	background-color: #bb2d3b;
+	border-color: #b02a37;
+}
+
+/* X-Small devices (portrait phones, less than 576px) */
+/* No media query for `xs` since this is the default in Bootstrap */
+
+.data.row-cols-1 .col:first-child {
+		margin-top: 0px;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+	.data.row-cols-sm-2 .col:nth-child(-n+2) {
+		margin-top: 0px;
+	}
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+	.data.row-cols-lg-3 .col:nth-child(-n+3) {
+		margin-top: 0px;
+	}
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+}
