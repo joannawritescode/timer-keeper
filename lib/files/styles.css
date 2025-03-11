@@ -1,26 +1,16 @@
-.col {
-border: 0 solid #555555;
-}
+.col { border: 0 solid #555555; }
+.data > .col { margin-top: 45px; }
 
-.data > .col {
-  margin-top: 45px;
-}
 .card {
-width: auto;
-margin: 10px;
+  width: auto;
+  margin: 10px;
 }
-.card-body .row {
-margin: 10px 0;
-}
-.time.row {
-margin-bottom: 20px;
-}
-.buttons button {
-margin: auto 3px;
-}
-.hide {
-display: none;
-}
+.card-body .row { margin: 10px 0; }
+.time.row { margin-bottom: 20px; }
+.buttons button { margin: auto 3px; }
+.hide { display: none; }
+
+
 .time > ::after {
   content: attr(label);
   margin-left: 8px;
@@ -28,17 +18,14 @@ display: none;
   width: 70px;
   text-align: left;
 }
-.example {
-display: none;
-visibility: none;
-}
+
 .card h2 {
-line-height: 1;
-position: relative;
+  line-height: 1;
+  position: relative;
 }
 .card h2 input {
-max-width: 280px;
-margin: -8px auto;
+  max-width: 280px;
+  margin: -8px auto;
 }
 
 .card h2.hover::before {
@@ -77,17 +64,11 @@ button.edit-title, button.save-title {
 	pointer-events: none;
 }
 
-.card h2.hover.editing + button.edit-title {
-	visibility: hidden;
-}
+.card h2.hover.editing + button.edit-title { visibility: hidden; }
 
-.card h2.editing + button + button.save-title {
-	visibility: visible;
-}
+.card h2.editing + button + button.save-title { visibility: visible; }
 
-.copy {
-	cursor: pointer;
-}
+.copy { cursor: pointer; }
 
 .copy:hover {
 	background-color: var(--bs-primary-bg-subtle);
